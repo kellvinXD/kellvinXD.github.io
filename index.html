@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id='demo'></p>
+  <script type="text/javascript">
+var player = prompt('what is your choice?');
+var choices = ['rock','paper','scissors'];
+var computer = choices[Math.floor(Math.random()*3)];
+
+if(player == 'rock'){
+  if(computer == 'paper'){
+      document.getElementById('demo').innerHTML = 'computer wins!';}
+  else if(computer == 'scissors'){
+      document.getElementById('demo').innerHTML='player wins!';}
+  else{
+      document.getElementById('demo').innerHTML='it is a tie game!';
+}
+}
+if(player == 'paper'){
+  if(computer == 'rock'){
+      document.getElementById('demo').innerHTML='player wins';}
+  else if(computer == 'scissors'){
+      document.getElementById('demo').innerHTML='computer wins';}
+  else{
+      document.getElementById('demo').innerHTML='tie game';
+}
+}
+if(player == 'scissors'){
+  if(computer == 'rock'){
+      document.getElementById('demo').innerHTML='computer wins';}
+  else if(computer == 'paper'){
+      document.getElementById('demo').innerHTML='player wins';}
+  else{
+      document.getElementById('demo').innerHTML='tie game';
+}
+}
+</script>
+</body>
+</html>
